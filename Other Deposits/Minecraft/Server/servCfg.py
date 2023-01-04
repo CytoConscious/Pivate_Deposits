@@ -3,6 +3,13 @@ import psutil
 import os
 import time
 
+
+try:
+    os.system('tmux send -t mc "java -Xms6G -Xmx7600M -jar /home/bill/server.jar nogui" ENTER')   # 先尝试启动
+except:
+    pass
+
+
 def start():
     os.system('tmux send -t mc "java -Xms6G -Xmx7600M -jar /home/bill/server.jar nogui" ENTER')
 def restart():
@@ -11,7 +18,7 @@ def restart():
     time.sleep(30)
     os.system('tmux send -t mc "/stop" ENTER')
     time.sleep(15)
-    os.system('tmux send -t mc "java -Xms6G -Xmx7600M -jar /home/bill/server.jar nogui" ENTER')
+    os.system('tmux send -t mc "java -Xms6G -Xmx7600M -jar /home/bill/server.jar nogui" ENTER')   # 根据需求更改
 def shutdown():
     os.system('tmux send -t mc "/say §b§lThe server will restart in 30sec" ENTER')
     time.sleep(30)
@@ -32,7 +39,7 @@ def calc():
 while True:
     calc()
     os.system("date")
-    time.sleep(1200)
+    time.sleep(1200)  #等待20min
 
         
 
