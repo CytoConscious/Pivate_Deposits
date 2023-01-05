@@ -33,7 +33,7 @@ def calc():
     print('系统总计内存:%fGB' % tot)
     print('系统已经使用内存:%fGB' % used)
     print('系统空闲内存:%fGB' % free)
-    if free <= 0.6:
+    if free <= 0.6:    # 根据需求更改
         restart()
 
 while True:
