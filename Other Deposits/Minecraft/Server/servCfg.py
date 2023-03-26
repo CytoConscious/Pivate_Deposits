@@ -1,24 +1,20 @@
 #/usr/lib/python3.9
+# 服务器内存：8G
 import psutil
 import os
 import time
 
-
-try:
-    os.system('tmux send -t mc "java -Xms6G -Xmx7600M -jar /home/bill/server.jar nogui" ENTER')   # 先尝试启动
-except:
-    pass
-
+servPath=""  # server.jar的绝对路径
 
 def start():
-    os.system('tmux send -t mc "java -Xms6G -Xmx7600M -jar /home/bill/server.jar nogui" ENTER')
+    os.system(f'tmux send -t mc "java -Xms6G -Xmx7600M -jar {servPath} nogui" ENTER')  # 根据需求修改内存
 def restart():
     os.system('tmux send -t mc "/say §c§l[Memory Insufficiency]" ENTER')
     os.system('tmux send -t mc "/say §b§lThe server will restart in 30sec" ENTER')
     time.sleep(30)
     os.system('tmux send -t mc "/stop" ENTER')
     time.sleep(15)
-    os.system('tmux send -t mc "java -Xms6G -Xmx7600M -jar /home/bill/server.jar nogui" ENTER')   # 根据需求更改
+    start()   
 def shutdown():
     os.system('tmux send -t mc "/say §b§lThe server will restart in 30sec" ENTER')
     time.sleep(30)
@@ -36,6 +32,11 @@ def calc():
     if free <= 0.6:    # 根据需求更改
         restart()
 
+try:
+    start()
+except:
+    pass
+        
 while True:
     calc()
     os.system("date")
