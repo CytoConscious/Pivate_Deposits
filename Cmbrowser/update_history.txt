@@ -1,0 +1,59 @@
+():Adjunctive updates, fixed bugs
+[]:Added new features, fixed some (deadly) bugs
+{}:Important updates, changed the way how Cmbrowser works
+<>:Totally recoded the program 
+
+=======================================
+{v 1.0.0}
+The first formal version of Cmbrowser!
+
+{v 1.1.0}
+Magnify, Scroll and move the Image!
+
+[v 1.1.1]
+Fixed some bugs
+Added some extra functions
+
+[v 1.1.2]
+Added "Check Save" and "Open Directory" buttons
+Added a duplication elimination system in function "writepath"(Add a book to library) in case of erasing the data in the prior saves.
+Fixed a serious bug (Cannot add new book to library)
+Custom Font is Avaliable Now!
+
+[v 1.1.3]
+Fixed a problem with chapters and folders
+Fixed a problem with image do not show on canvas (By declaring a global variable)
+
+{v 1.2.0}
+User can now create libraries to store different types of contents!
+
+[v 1.2.1]
+Fixed a bug (Error when switching libraries)
+Fixed a bug (Save Invalid page number, making the file unable to load)
+
+[v 1.2.2]
+Fixed a bug introduced in the last update (Cannot Flip Page)
+Now again automatically close Input Page-number window.
+
+[v 1.2.3]
+Deleted some unwanted features
+Folders with no chapter are avaliable to load now
+Improved some details
+
+[v 1.2.4]
+Improved the feature of 1.2.3
+fixed a bug brought by 1.2.3
+
+[v 1.2.5]
+Added Custom-Font as a function
+
+[v 1.3.0]
+Key Configure avaliable
+Improved program's preformance
+Mouse control avaliable
+
+
+
+
+
+

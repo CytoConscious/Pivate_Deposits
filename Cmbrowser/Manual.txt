@@ -1,0 +1,34 @@
+Home Page:
+[<Z>]:Library
+[<X>]:Select Book/Cancel
+[<C>]:Select Folder
+[<V>]:Setting
+[<A>]:Switch Library
+
+Library/Switch-Library Page:
+[<Enter>]:Browse/Switch
+[<Backspace>]:Remove content
+[<Ctrl-Backspace>]:Remove without confirm
+[<Z>]:(Only Switch-Library)Create New Library
+[<X>]:Exit
+=========================================
+CmBrowser(Image-View):
+[<Esc>,<Ctrl + Space>]:Exit Image-Viewer
+[<Q>]:Go back to home page
+[<X>]:Minimize/Cancel
+[<Enter>]:Confirm
+
+[<C>]:Chapter Catalog
+[<V>,<Shift_Left>]:Flip by page number
+
+[<A>]:Shrink Image
+[<S>]:Expand Image
+[<D>]:Maximize Image
+[<Z>,<F>,</>,<Shift_Right>]:Reload Image
+
+[<Ctrl + Arrow-key>]:Scroll Image
+
+
+
+
+(Make sure you DON'T turn on Caps-lock)
